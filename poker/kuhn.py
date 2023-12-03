@@ -112,6 +112,7 @@ def init_efg(num_ranks=3,
         return efg.ExtensiveFormGame(
             "Kuhn%d EFG" % num_ranks,
             A,
+            A,
             (first_p1, first_p2),
             (end_p1, end_p2),
             (parent_p1, parent_p2),
@@ -123,6 +124,7 @@ def init_efg(num_ranks=3,
     else:
         return efg.ExtensiveFormGame(
             "Kuhn%d EFG" % num_ranks,
+            A,
             A,
             (first_p1, first_p2),
             (end_p1, end_p2),
